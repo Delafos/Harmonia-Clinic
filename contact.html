@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Harmonia Wellness Clinic — location, hours, phone, and message form.">
+  <title>Contact | Harmonia Wellness Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Harmonia Wellness Clinic home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 10v20M14 16c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-name">Harmonia</span>
+          <span class="logo-tagline">Wellness Clinic</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="departments.html" data-nav="departments">Departments</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="appointments.html" data-nav="appointments">Appointments</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="appointments.html#registration" class="btn btn-ghost">Register</a>
+          <a href="appointments.html#booking" class="btn btn-primary">Book Appointment</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>We&rsquo;re here when you need us</h1>
+        <p class="page-hero-lead">Reach our front desk by phone, email, or the form below — a real person answers within three rings on business days.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-page-grid">
+        <div class="contact-info-block">
+          <img
+            src="images/entrance.jpg"
+            alt="Harmonia clinic building entrance"
+            width="800"
+            height="500"
+            loading="lazy"
+            class="contact-hero-image"
+          >
+          <address>
+            <p><strong>Harmonia Wellness Clinic</strong></p>
+            <p>42 Serenity Lane, Greenfield District</p>
+            <p>Mon – Fri: 7:30 AM – 8:00 PM</p>
+            <p>Sat: 8:00 AM – 2:00 PM</p>
+            <p>Sun: Emergency line only</p>
+          </address>
+          <ul class="contact-links">
+            <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+            <li><a href="mailto:care@harmonia-clinic.com">care@harmonia-clinic.com</a></li>
+          </ul>
+          <div class="contact-quick-actions">
+            <a href="appointments.html#booking" class="btn btn-primary">Book Appointment</a>
+            <a href="departments.html" class="btn btn-outline">View Departments</a>
+          </div>
+          <div class="map-placeholder" aria-label="Map placeholder">
+            <p>📍 Greenfield District — Free patient parking · Wheelchair accessible</p>
+          </div>
+        </div>
+        <form class="contact-form card-form" id="contactForm" novalidate>
+          <h2>Send a message</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full name</label>
+              <input type="text" id="contactName" name="name" required autocomplete="name">
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" required autocomplete="email">
+              <span class="error-msg" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" name="subject" required>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-footer">
+          <span class="logo-name">Harmonia</span>
+          <span class="logo-tagline">Wellness Clinic</span>
+        </a>
+        <p>Serene healthcare for every stage of life.</p>
+      </div>
+      <nav aria-label="Pages">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Departments">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="departments.html#eye">Eye Clinic</a></li>
+          <li><a href="departments.html#dental">Dental Clinic</a></li>
+          <li><a href="departments.html#consulting">General Consulting</a></li>
+          <li><a href="departments.html#maternity">Maternity</a></li>
+        </ul>
+      </nav>
+      <div class="footer-hours">
+        <h4>Hours</h4>
+        <p>Mon – Fri: 7:30 AM – 8:00 PM</p>
+        <p>Sat: 8:00 AM – 2:00 PM</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Harmonia Wellness Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

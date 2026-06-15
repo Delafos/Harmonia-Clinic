@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment or register as a new patient at Harmonia Wellness Clinic.">
+  <title>Appointments | Harmonia Wellness Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="appointments">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Harmonia Wellness Clinic home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 10v20M14 16c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-name">Harmonia</span>
+          <span class="logo-tagline">Wellness Clinic</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="departments.html" data-nav="departments">Departments</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="appointments.html" data-nav="appointments">Appointments</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="appointments.html#registration" class="btn btn-ghost">Register</a>
+          <a href="appointments.html#booking" class="btn btn-primary">Book Appointment</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Appointments</p>
+        <h1>Book a visit or register as a patient</h1>
+        <p class="page-hero-lead">Complete the form below — we confirm bookings within two hours on business days.</p>
+        <nav class="page-tabs" aria-label="Appointment sections">
+          <a href="#booking" class="page-tab">Book appointment</a>
+          <a href="#registration" class="page-tab">Patient registration</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container form-page-grid">
+        <div class="form-page-intro">
+          <h2>Book an appointment</h2>
+          <p>Select your department: Eye Clinic, Dental Clinic, General Consulting / Well-being, or Maternity.</p>
+          <img
+            src="images/entrance.jpg"
+            alt="Patient checking in at hospital reception"
+            width="600"
+            height="400"
+            loading="lazy"
+            class="form-side-image"
+          >
+        </div>
+        <form class="page-form card-form" id="bookForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookFirstName">First name <span class="required">*</span></label>
+              <input type="text" id="bookFirstName" name="firstName" required autocomplete="given-name">
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="bookLastName">Last name <span class="required">*</span></label>
+              <input type="text" id="bookLastName" name="lastName" required autocomplete="family-name">
+              <span class="error-msg" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookEmail">Email <span class="required">*</span></label>
+              <input type="email" id="bookEmail" name="email" required autocomplete="email">
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="bookPhone">Phone <span class="required">*</span></label>
+              <input type="tel" id="bookPhone" name="phone" required autocomplete="tel">
+              <span class="error-msg" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bookDept">Department <span class="required">*</span></label>
+            <select id="bookDept" name="department" required>
+              <option value="">Select a department</option>
+              <option value="Eye Clinic">Eye Clinic</option>
+              <option value="Dental Clinic">Dental Clinic</option>
+              <option value="General Consulting / Well-being">General Consulting / Well-being</option>
+              <option value="Maternity">Maternity</option>
+            </select>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookDate">Preferred date <span class="required">*</span></label>
+              <input type="date" id="bookDate" name="date" required>
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="bookTime">Preferred time <span class="required">*</span></label>
+              <select id="bookTime" name="time" required>
+                <option value="">Select a time</option>
+                <option value="08:00">8:00 AM</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+              </select>
+              <span class="error-msg" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bookReason">Reason for visit</label>
+            <textarea id="bookReason" name="reason" rows="3" placeholder="Brief description helps us prepare"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" id="bookConsent" name="consent" required>
+            <label for="bookConsent">I agree to be contacted about this appointment <span class="required">*</span></label>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Confirm Booking</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="registration">
+      <div class="container form-page-grid form-page-grid-reverse">
+        <form class="page-form card-form" id="registerForm" novalidate>
+          <h2 class="form-inline-title">Patient registration</h2>
+          <fieldset>
+            <legend>Personal information</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="regFirstName">First name <span class="required">*</span></label>
+                <input type="text" id="regFirstName" name="firstName" required autocomplete="given-name">
+                <span class="error-msg" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="regLastName">Last name <span class="required">*</span></label>
+                <input type="text" id="regLastName" name="lastName" required autocomplete="family-name">
+                <span class="error-msg" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="regDob">Date of birth <span class="required">*</span></label>
+                <input type="date" id="regDob" name="dob" required>
+                <span class="error-msg" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="regGender">Gender</label>
+                <select id="regGender" name="gender">
+                  <option value="">Prefer not to say</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="nonbinary">Non-binary</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Contact details</legend>
+            <div class="form-group">
+              <label for="regEmail">Email <span class="required">*</span></label>
+              <input type="email" id="regEmail" name="email" required autocomplete="email">
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="regPhone">Phone <span class="required">*</span></label>
+              <input type="tel" id="regPhone" name="phone" required autocomplete="tel">
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="regAddress">Home address <span class="required">*</span></label>
+              <input type="text" id="regAddress" name="address" required autocomplete="street-address">
+              <span class="error-msg" role="alert"></span>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Healthcare preferences</legend>
+            <div class="form-group">
+              <label for="regDept">Primary department</label>
+              <select id="regDept" name="department">
+                <option value="">Select (optional)</option>
+                <option value="Eye Clinic">Eye Clinic</option>
+                <option value="Dental Clinic">Dental Clinic</option>
+                <option value="General Consulting / Well-being">General Consulting / Well-being</option>
+                <option value="Maternity">Maternity</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="regInsurance">Insurance provider</label>
+              <input type="text" id="regInsurance" name="insurance" placeholder="Leave blank if self-pay">
+            </div>
+            <div class="form-group">
+              <label for="regEmergency">Emergency contact <span class="required">*</span></label>
+              <input type="text" id="regEmergency" name="emergency" required placeholder="Name — phone number">
+              <span class="error-msg" role="alert"></span>
+            </div>
+          </fieldset>
+          <div class="form-group form-check">
+            <input type="checkbox" id="regConsent" name="consent" required>
+            <label for="regConsent">I consent to Harmonia storing my health information per clinic privacy policy <span class="required">*</span></label>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Complete Registration</button>
+        </form>
+        <div class="form-page-intro">
+          <h2>New patient registration</h2>
+          <p>Create your profile before your first visit. Bring photo ID to complete verification at reception.</p>
+          <img
+            src="images/collaboration.jpg"
+            alt="Caring medical professional with patient"
+            width="600"
+            height="400"
+            loading="lazy"
+            class="form-side-image"
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-footer">
+          <span class="logo-name">Harmonia</span>
+          <span class="logo-tagline">Wellness Clinic</span>
+        </a>
+        <p>Serene healthcare for every stage of life.</p>
+      </div>
+      <nav aria-label="Pages">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Departments">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="departments.html#eye">Eye Clinic</a></li>
+          <li><a href="departments.html#dental">Dental Clinic</a></li>
+          <li><a href="departments.html#consulting">General Consulting</a></li>
+          <li><a href="departments.html#maternity">Maternity</a></li>
+        </ul>
+      </nav>
+      <div class="footer-hours">
+        <h4>Hours</h4>
+        <p>Mon – Fri: 7:30 AM – 8:00 PM</p>
+        <p>Sat: 8:00 AM – 2:00 PM</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Harmonia Wellness Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

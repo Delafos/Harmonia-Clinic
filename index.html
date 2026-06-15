@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harmonia Wellness Clinic — serene eye, dental, consulting, and maternity care. Book your visit today.">
+  <title>Home | Harmonia Wellness Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Harmonia Wellness Clinic home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 10v20M14 16c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-name">Harmonia</span>
+          <span class="logo-tagline">Wellness Clinic</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="departments.html" data-nav="departments">Departments</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="appointments.html" data-nav="appointments">Appointments</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="appointments.html#registration" class="btn btn-ghost">Register</a>
+          <a href="appointments.html#booking" class="btn btn-primary">Book Appointment</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-compact" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">A sanctuary for healing</p>
+          <h1>Serene care across every stage of life</h1>
+          <p class="hero-lead">
+            From vision and dental health to general consulting, well-being, and maternity —
+            experience coordinated care in a calm, welcoming hospital environment.
+          </p>
+          <div class="hero-actions">
+            <a href="appointments.html#booking" class="btn btn-primary btn-lg">Book Your Visit</a>
+            <a href="departments.html" class="btn btn-outline btn-lg">Explore Departments</a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><strong>15+</strong><span>Years of care</span></div>
+            <div class="trust-item"><strong>4</strong><span>Specialty departments</span></div>
+            <div class="trust-item"><strong>98%</strong><span>Patient satisfaction</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-image"
+            src="images/entrance.jpg"
+            alt="Sunlit hospital corridor with calm, modern design"
+            width="800"
+            height="560"
+            loading="eager"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="slideshow-section section" id="services-showcase" aria-label="Hospital services showcase">
+      <div class="container">
+        <header class="section-header section-header-center">
+          <p class="eyebrow">Our hospital</p>
+          <h2>Services &amp; spaces that put patients at ease</h2>
+          <p>A glimpse of the care, comfort, and expertise waiting for you at Harmonia.</p>
+        </header>
+
+        <div class="service-slideshow" id="serviceSlideshow">
+          <div class="slideshow-viewport">
+            <div class="slideshow-track" id="slideshowTrack">
+              <figure class="slide active" data-slide="0">
+                <img src="images/entrance.jpg" alt="Welcoming hospital reception and patient check-in area" width="1400" height="700" loading="eager">
+                <figcaption class="slide-caption">
+                  <span class="slide-tag">Welcome</span>
+                  <h3>Serene reception &amp; patient navigation</h3>
+                  <p>Clear signage, quiet waiting areas, and staff who guide you from arrival to your department.</p>
+                </figcaption>
+              </figure>
+              <figure class="slide" data-slide="1">
+                <img src="images/eye-clinic.jpg" alt="Eye clinic examination with specialist equipment" width="1400" height="700" loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-tag">Eye Clinic</span>
+                  <h3>Advanced vision screening &amp; treatment</h3>
+                  <p>Comprehensive eye exams, retinal imaging, and specialist consultations in light-filled suites.</p>
+                </figcaption>
+              </figure>
+              <figure class="slide" data-slide="2">
+                <img src="images/dentist.png" alt="Dental clinic providing gentle patient care" width="1400" height="700" loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-tag">Dental Clinic</span>
+                  <h3>Gentle dentistry for every age</h3>
+                  <p>Preventive care, restorative work, and anxiety-free treatment in spa-like dental rooms.</p>
+                </figcaption>
+              </figure>
+              <figure class="slide" data-slide="3">
+                <img src="images/collaboration.jpg" alt="Doctor consulting with patient in general well-being clinic" width="1400" height="700" loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-tag">General Consulting</span>
+                  <h3>Well-being &amp; holistic health plans</h3>
+                  <p>One-on-one consulting, preventive screenings, nutrition, and chronic care coordination.</p>
+                </figcaption>
+              </figure>
+              <figure class="slide" data-slide="4">
+                <img src="images/maternity.jpg" alt="Maternity ward supporting mother and newborn" width="1400" height="700" loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-tag">Maternity</span>
+                  <h3>Compassionate maternity &amp; newborn care</h3>
+                  <p>Antenatal visits, delivery suites, lactation support, and postnatal follow-up under one roof.</p>
+                </figcaption>
+              </figure>
+              <figure class="slide" data-slide="5">
+                <img src="images/collaboration.jpg" alt="Medical team collaborating in modern hospital" width="1400" height="700" loading="lazy">
+                <figcaption class="slide-caption">
+                  <span class="slide-tag">Coordinated care</span>
+                  <h3>Professional teams working together</h3>
+                  <p>Doctors and nurses share records across departments so your care stays seamless.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="slideshow-controls">
+            <button type="button" class="slider-btn slideshow-prev" id="slideshowPrev" aria-label="Previous slide">&larr;</button>
+            <div class="slideshow-dots" id="slideshowDots" role="tablist" aria-label="Service slides"></div>
+            <button type="button" class="slider-btn slideshow-next" id="slideshowNext" aria-label="Next slide">&rarr;</button>
+          </div>
+          <div class="slideshow-thumbs" id="slideshowThumbs" aria-label="Slide thumbnails"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="departments section section-alt" id="departments-preview">
+      <div class="container">
+        <header class="section-header section-header-center">
+          <p class="eyebrow">Departments</p>
+          <h2>Four centers of excellence</h2>
+          <p>Specialized care designed around your needs — each with its own serene, dedicated space.</p>
+        </header>
+        <div class="dept-grid dept-grid-4">
+          <article class="dept-card dept-card-image">
+            <div class="dept-card-photo">
+              <img src="images/eye-clinic.jpg" alt="Eye clinic examination room" width="600" height="400" loading="lazy">
+            </div>
+            <div class="dept-card-body">
+              <h3>Eye Clinic</h3>
+              <p>Vision screenings, glaucoma care, and pediatric eye health.</p>
+              <a href="departments.html#eye" class="dept-link">Learn more</a>
+            </div>
+          </article>
+          <article class="dept-card dept-card-image">
+            <div class="dept-card-photo">
+              <img src="images/dentist.png" alt="Dental treatment room" width="600" height="400" loading="lazy">
+            </div>
+            <div class="dept-card-body">
+              <h3>Dental Clinic</h3>
+              <p>Gentle dentistry, orthodontics, and same-day emergency relief.</p>
+              <a href="departments.html#dental" class="dept-link">Learn more</a>
+            </div>
+          </article>
+          <article class="dept-card dept-card-image">
+            <div class="dept-card-photo">
+              <img src="images/collaboration.jpg" alt="General consulting consultation" width="600" height="400" loading="lazy">
+            </div>
+            <div class="dept-card-body">
+              <h3>General Consulting / Well-being</h3>
+              <p>Holistic health plans, preventive care, and wellness coaching.</p>
+              <a href="departments.html#consulting" class="dept-link">Learn more</a>
+            </div>
+          </article>
+          <article class="dept-card dept-card-image">
+            <div class="dept-card-photo">
+              <img src="images/maternity.jpg" alt="Maternity care with mother and baby" width="600" height="400" loading="lazy">
+            </div>
+            <div class="dept-card-body">
+              <h3>Maternity</h3>
+              <p>Antenatal, delivery, and postnatal support in private suites.</p>
+              <a href="departments.html#maternity" class="dept-link">Learn more</a>
+            </div>
+          </article>
+        </div>
+        <p class="section-cta-center">
+          <a href="departments.html" class="btn btn-primary">View All Departments</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials section">
+      <div class="container">
+        <header class="section-header section-header-center">
+          <p class="eyebrow">Patient stories</p>
+          <h2>Trusted by families across our community</h2>
+        </header>
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <blockquote class="testimonial-card active">
+              <p>&ldquo;The maternity team made our first birth feel safe and unhurried. We felt supported every step.&rdquo;</p>
+              <footer><strong>Amara &amp; David L.</strong><span>Maternity · New parents</span></footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p>&ldquo;My well-being consultant helped me build habits I could actually keep. The clinic feels like a retreat.&rdquo;</p>
+              <footer><strong>Priya K.</strong><span>General Consulting · 3-month program</span></footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p>&ldquo;The eye clinic caught an issue early. Professional, thorough, and surprisingly relaxing.&rdquo;</p>
+              <footer><strong>Marcus T.</strong><span>Eye Clinic · Annual screening</span></footer>
+            </blockquote>
+          </div>
+          <div class="testimonial-controls">
+            <button type="button" class="slider-btn" id="prevTestimonial" aria-label="Previous testimonial">&larr;</button>
+            <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Testimonials"></div>
+            <button type="button" class="slider-btn" id="nextTestimonial" aria-label="Next testimonial">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container cta-strip-inner">
+        <div>
+          <h2>Ready for care that feels different?</h2>
+          <p>Book online or register as a new patient in minutes.</p>
+        </div>
+        <div class="cta-strip-actions">
+          <a href="appointments.html#booking" class="btn btn-primary btn-lg">Book Appointment</a>
+          <a href="appointments.html#registration" class="btn btn-outline-light btn-lg">Register</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-footer">
+          <span class="logo-name">Harmonia</span>
+          <span class="logo-tagline">Wellness Clinic</span>
+        </a>
+        <p>Serene healthcare for every stage of life.</p>
+      </div>
+      <nav aria-label="Pages">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Departments">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="departments.html#eye">Eye Clinic</a></li>
+          <li><a href="departments.html#dental">Dental Clinic</a></li>
+          <li><a href="departments.html#consulting">General Consulting</a></li>
+          <li><a href="departments.html#maternity">Maternity</a></li>
+        </ul>
+      </nav>
+      <div class="footer-hours">
+        <h4>Hours</h4>
+        <p>Mon – Fri: 7:30 AM – 8:00 PM</p>
+        <p>Sat: 8:00 AM – 2:00 PM</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Harmonia Wellness Clinic. All rights reserved.</p>
+      <p class="footer-note">Demo site — forms simulate submission.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
